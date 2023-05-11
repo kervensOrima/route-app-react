@@ -1,4 +1,3 @@
-import './App.css';
 import BaseRouter from './BaseRouter';
 import BaseRouterNew from './BaseRouterNew';
 

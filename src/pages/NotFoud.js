@@ -1,12 +1,26 @@
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 
 const NotFound = () => {
 
-    const history = useHistory()
+    const navigate = useNavigate()
 
+    /**
+     * 
+     * @param {*} e 
+     * go to the last page
+     */
     const handleGoBack = (e) => {
-        history.goBack()
+        navigate(-1)
+    }
+
+    /**
+     * 
+     * @param {*} e 
+     * go the previous page
+     */
+    const handleGoForhead = (e) => {
+        navigate(1)
     }
 
     return (
